@@ -17,15 +17,21 @@
             return names[i];
         }
     }
+
+
+
     public class catalog
     {
-        public string CartXPath = "//div[@class='row']/div[3]/div[2]";
+        public string CartXPath = "basketDesktop";
         public string GoodFromCatalog(int i)
         {
             string Good = "//div[@id='sort']/div[" + i + "]/div/div/div[5]";
             return Good;
         }
     }
+
+
+
     public class cart
     {
         public string DeliverAdressPath(int adress)
@@ -34,14 +40,20 @@
             string Adress = "//div[@id='delivery-type-and-address-select-block']/div/div[" + adress + "]/label/span";
             return Adress;
         }
+
+
+
         public string PayTypePath(int type)
         {
             string Type = "//div[@class='payments']/div/div[" + type + "]/label/span";
             return Type;
         }
+
+
+
         public string PromocodePath = "//div[@id='basket-page-promo-code']/div[1]/div[2]/div/input";
         public string CommentPath = "//div[@id='basket-page-promo-code']/div[2]/textarea";
-        public string CartOrderPath = "//div[@class='step-container']/div[2]/div/div";
+        public string CartOrderPath = "testOrder";
         public string FinalOrderPath = "//div[@class='modal-body']/div[5]/div[2]/div";
     }
 }

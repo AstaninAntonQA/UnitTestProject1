@@ -17,6 +17,9 @@ namespace Initialization
         public int final_number;
         public string DAdress;
         public int category;
+        public int random;
+        public int CatCount;
+        public char[] Mcat;
 
         public void Initialization()
         {
@@ -30,6 +33,9 @@ namespace Initialization
             adress = Convert.ToInt16(TestingData[13]);
             paytype = Convert.ToInt16(TestingData[15]);
             category = Convert.ToInt16(TestingData[17]);
+            random = Convert.ToInt16(TestingData[19]);
+            CatCount = Convert.ToInt16(TestingData[21]);
+            Mcat = TestingData[17].ToCharArray(0, TestingData[17].Length);
         }
     }
 }
